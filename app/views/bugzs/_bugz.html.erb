@@ -1,0 +1,34 @@
+<div id="<%= dom_id bugz %>">
+  <p>
+    <strong>Title:</strong>
+    <%= bugz.title %>
+  </p>
+
+  <p>
+    <strong>Deadline:</strong>
+    <%= bugz.deadline %>
+  </p>
+  <p>
+  <strong>Image:</strong>
+  <% if @bugz && @bugz.image.present? %>
+    <%= image_tag @bugz.image %>
+  <% else %>
+    click on show to see image 
+  <% end %>
+</p>
+  <p>
+    <strong>B type:</strong>
+    <%= bugz.b_type %>
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    <%= bugz.status %>
+  </p>
+
+  <p>
+    <strong>Project:</strong>
+    <%= bugz.project_id %>
+  </p>
+
+</div>

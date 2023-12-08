@@ -1,0 +1,18 @@
+current directory: /home/khushnoood/hogya/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+/home/khushnoood/.asdf/installs/ruby/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/khushnoood/hogya/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20231206-39480-69ash5 sitelibdir\=./.gem.20231206-39480-69ash5 clean
+
+current directory: /home/khushnoood/hogya/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20231206-39480-69ash5 sitelibdir\=./.gem.20231206-39480-69ash5
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /home/khushnoood/hogya/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20231206-39480-69ash5 sitelibdir\=./.gem.20231206-39480-69ash5 install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20231206-39480-69ash5
+
+current directory: /home/khushnoood/hogya/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20231206-39480-69ash5 sitelibdir\=./.gem.20231206-39480-69ash5 clean

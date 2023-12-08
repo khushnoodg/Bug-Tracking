@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Proj users</h1>
+
+<div id="proj_users">
+  <% @proj_users.each do |proj_user| %>
+    <%= render proj_user %>
+    <p>
+      <%= link_to "Show this proj user", proj_user %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New proj user", new_proj_user_path %>

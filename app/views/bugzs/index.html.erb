@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+<% if user_signed_in? %><%= button_to  'Logout', destroy_user_session_path, method: :delete,class: 'btn' %>
+
+
+<% else %><%= link_to 'Sign up', new_user_registration_path %> <%= link_to 'Login', new_user_session_path %><% end %>
+
+<h1>Bugzs</h1>
+
+<div id="bugzs">
+  <% @bugzs.each do |bugz| %>
+    <%= render bugz %>
+    <p>
+      <%= link_to "Show this bugz", bugz %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New bugz", new_bugz_path %>

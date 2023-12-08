@@ -1,0 +1,67 @@
+
+<div id="<%= dom_id project %>">
+<table border="1">
+        <tr>
+        <th>NAME</th>
+        <th> Developer/QA </th>
+      </tr>
+  <tr>
+  
+    <td><%= project.name %></td>
+    <td>
+    <table border="1">
+      <tr>
+        <th>Their ID</th>
+      </tr>
+      <% project.proj_users.each do |task| %>
+        <tr>
+          <td><%= task.user_id %></td>
+          
+        </tr>
+      <% end %>
+    </table></td>
+  </tr>
+</table>
+<h3>Their Bugs</h3>
+
+
+<% project.bugzs.each do |bug| %>
+
+    <p>
+      <strong>Title:</strong>
+      <%= bug.title %>
+    </p>
+
+    <p>
+    <strong>Deadline:</strong>
+    <%= bug.deadline %>
+  </p>
+  <p>
+    <strong>Image:</strong>
+    <% if @bug && @bug.image.present? %>
+    <%= image_tag @bugz.image %>
+  <% else %>
+    click on show to see image 
+  <% end %>
+</p>
+  <p>
+    <strong>B type:</strong>
+    <%= bug.b_type %>
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    <%= bug.status %>
+  </p>
+
+  <p>
+    <strong>Project:</strong>
+    <%= bug.project_id %>
+  </p>
+    
+
+
+    <% end %>
+
+
+</div>

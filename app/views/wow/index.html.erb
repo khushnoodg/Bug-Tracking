@@ -1,0 +1,7 @@
+<h1>Wow#index</h1>
+<p>Find me in app/views/wow/index.html.erb</p>
+
+<% if user_signed_in? %><%= button_to  'Logout', destroy_user_session_path, method: :delete,class: 'btn' %>
+
+
+<% else %><%= link_to 'Sign up', new_user_registration_path %> <%= link_to 'Login', new_user_session_path %><% end %>
