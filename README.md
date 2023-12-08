@@ -5,13 +5,15 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version  (3.2.2)
+  
+* rails version (7.1.1)
+
+* Database creation ( postgresql)
 
 * System dependencies
 
 * Configuration
-
-* Database creation
 
 * Database initialization
 
